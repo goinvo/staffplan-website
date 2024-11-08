@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface NavbarLinksTypes {
     href: string;
@@ -15,7 +16,7 @@ const navbarLinks: NavbarLinksTypes[] = [
 const Header: React.FC = () => (
     <header className="bg-white text-tiffany px-4">
         <div className="flex justify-between items-center">
-            <h1 className="text-huge font-bold">Staffplan</h1>
+            <Image src="/logo.svg" width={174} height={43} alt="staffplan logo" />
             <nav className='mr-4'>
                 <ul className="flex text-26px space-x-8">
                     {navbarLinks.map((link, index) => (
