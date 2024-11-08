@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #0a0a0a;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-demo-gradient {
+  background: linear-gradient(229.1deg, #0EEEAB -12.95%, #1FA7E0 36.43%, #0016E0 107.48%),
+              linear-gradient(0deg, rgba(255, 255, 255, 0.79), rgba(255, 255, 255, 0.79));
+  background-blend-mode: overlay;
+}
