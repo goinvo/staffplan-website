@@ -12,7 +12,7 @@ const StaffplanDemoContainer: React.FC<StaffplanDemoContainerProps> = ({ childre
             {children}
             <div className="relative w-full max-w-[95vw] h-[auto] aspect-[16/9] mb-8 px-4">
                 <Image
-                    src="/image.png"
+                    src="/tryStaffplanPreview.png"
                     alt="Description of image"
                     fill
                     sizes="(max-width: 640px) 80vw, (max-width: 768px) 80vw, (max-width: 1024px) 70vw, 50vw"
