@@ -19,7 +19,7 @@ const StaffplanDemoContainer: React.FC<StaffplanDemoContainerProps> = ({ childre
                     className="rounded-lg object-cover"
                 />
             </div>
-            <RoundedButton text="Sign me up!" variant="filled" size="large" href="https://staffplan.com/sign_in" />
+            <RoundedButton text="Sign me up!" variant="filled" size="large" href="https://staffplan.com/registrations/new" />
         </section>
     );
 };

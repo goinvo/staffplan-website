@@ -16,7 +16,7 @@ const columnTwoLinks = [
 ];
 
 const columnThreeLinks = [
-    { href: "#", label: "Sign In" },
+    { href: "https://staffplan.com/sign_in", label: "Sign In" },
     { href: "#", label: "Try for Free" }
 ];
 

@@ -10,7 +10,7 @@ interface NavbarLinksTypes {
 const navbarLinks: NavbarLinksTypes[] = [
     { href: "#Feedback", label: "Feedback" },
     { href: "#Try", label: "Try" },
-    { href: "#Sign in", label: "Sign in" }
+    { href: "https://staffplan.com/sign_in", label: "Sign in" }
 ];
 
 const Header: React.FC = () => (
