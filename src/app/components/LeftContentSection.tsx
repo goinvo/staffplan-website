@@ -10,7 +10,9 @@ const LeftContentSection: React.FC<RightContentSectionProps> = ({ children, roun
     return (
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center w-full">
             {children}
-            <RoundedContainer align="right" className="bg-purple" children={roundedContainerChildren} />
+            <RoundedContainer align="right" className="bg-purple">
+                {roundedContainerChildren}
+            </RoundedContainer>
         </div>
     )
 }

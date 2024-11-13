@@ -1,11 +1,7 @@
 import LeftSpeechBubble from "./LeftSpeechBubble"
 import RightSpeechBubble from "./RightSpeechBubble"
 
-interface BubbleSpeechContainerProps {
-
-}
-
-const BubbleSpeechContainer: React.FC<BubbleSpeechContainerProps> = () => {
+const BubbleSpeechContainer: React.FC = () => {
     return (
         <div className="my-2">
             <div className="flex flex-col ml-0 sm:ml-2 md:ml-4 mt-4 mb-0">

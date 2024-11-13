@@ -14,11 +14,13 @@ const navbarLinks: NavbarLinksTypes[] = [
 ];
 
 const Header: React.FC = () => (
-    <header className="bg-white text-tiffany px-4">
-        <div className="flex justify-between items-center">
-            <Image src="/logo.svg" width={174} height={43} alt="staffplan logo" />
+    <header className="bg-white sticky top-0 z-50 text-tiffany px-4">
+        <div className="flex justify-between items-center py-1">
+            <div className="py-1">
+                <Image src="/logo.svg" width={174} height={43} alt="staffplan logo" />
+            </div>
             <nav className='mr-4'>
-                <ul className="flex text-26px space-x-8">
+                <ul className="hidden sm:flex text-26px space-x-8">
                     {navbarLinks.map((link, index) => (
                         <li key={index}>
                             <Link href={link.href}>
