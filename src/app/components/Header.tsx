@@ -20,6 +20,9 @@ const Header: React.FC = () => (
                 <Image src="/logo.svg" width={174} height={43} alt="staffplan logo" />
             </div>
             <nav className='mr-4'>
+                <Link className="block sm:hidden text-26px" href={"https://staffplan.com/sign_in"}>
+                    {"Sign In"}
+                </Link>
                 <ul className="hidden sm:flex text-26px space-x-8">
                     {navbarLinks.map((link, index) => (
                         <li key={index}>

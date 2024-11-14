@@ -6,13 +6,14 @@ type InfoSectionProps = {
     showButton?: boolean;
     href?: string;
     buttonText?: string;
+    className?: string
 };
 
-const InfoSection: React.FC<InfoSectionProps> = ({ infoData, showButton = false, href, buttonText = "Click Me" }) => {
+const InfoSection: React.FC<InfoSectionProps> = ({ infoData, showButton = false, href, buttonText = "Click Me", className }) => {
     return (
         <section className="mt-8 sm:mt-0 space-y-8 pl-6 sm:pl-10 pr-14 sm:w-1/2 mb-8 sm:mb-0 order-1 sm:order-none">
             {infoData.map((info, index) => (
-                <div key={index} className="space-y-2 mb-4">
+                <div key={index} className="space-y-2 mb-4 mt-6">
                     <h1 className="text-26px font-bold">{info.title}</h1>
                     <h2 className="text-26px font-medium">{info.description}</h2>
                 </div>

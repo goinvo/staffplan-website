@@ -3,6 +3,7 @@ import './globals.css';
 import { Source_Sans_3 } from 'next/font/google';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+// import Chat from "./components/Chat";
 
 export const metadata: Metadata = {
   title: "staffplan.com",
@@ -27,6 +28,7 @@ export default function RootLayout({
         <Header />
         <main className="mx-auto">{children}</main>
         <Footer />
+        {/* <Chat /> */}
       </body>
     </html>
   );
