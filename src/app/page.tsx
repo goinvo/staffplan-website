@@ -27,7 +27,8 @@ const contentSections = [
     infoData: INVOLVED_INFO,
     showButton: true,
     buttonText: "Go to our GitHub",
-    href: "https://github.com/goinvo/staffplan-next-app"
+    href: "https://github.com/goinvo/staffplan-next-app",
+    roundedContainerClassName: 'my-8',
   },
 ];
 
@@ -40,7 +41,7 @@ export default function Content() {
       {contentSections.map((section, index) => {
         const { Component, roundedContainerChildren, infoData, showButton, buttonText, href } = section;
         return (
-          <Component key={index} roundedContainerChildren={roundedContainerChildren}>
+          <Component key={index} roundedContainerChildren={roundedContainerChildren} roundedContainerClassName={section.roundedContainerClassName}>
             <InfoSection infoData={infoData} showButton={showButton} buttonText={buttonText} href={href} />
           </Component>
         );

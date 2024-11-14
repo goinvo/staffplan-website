@@ -1,24 +1,26 @@
-import LeftSpeechBubble from "./LeftSpeechBubble"
-import RightSpeechBubble from "./RightSpeechBubble"
+import Image from "next/image";
+
 
 const BubbleSpeechContainer: React.FC = () => {
     return (
-        <div className="my-2">
-            <div className="flex flex-col ml-0 sm:ml-2 md:ml-4 mt-4 mb-0">
-                <div className="relative ml-16 xs:ml-20 sm:ml-10 md:ml-20 lg:ml-32">
-                    <LeftSpeechBubble text={'Our team has needs help with something in Staffplan...'} />
-                </div>
-                <div className="relative z-10 -mt-2">
-                    <RightSpeechBubble text={"We can help with that!"} />
-                </div>
-                <div className="relative ml-16 xs:ml-20 sm:ml-10 md:ml-20 lg:ml-32">
-                    <LeftSpeechBubble text={'Also, we have ideas!'} />
-                </div>
-                <div className="relative z-10 -mt-4">
-                    <RightSpeechBubble text={"Let’s chat! We can help with that too!"} />
-                </div>
+        <>
+            <div className="hidden sm:block relative z-20 mr-auto w-[100%] sm:w-[90%] sm:aspect-[11/7] sm:translate-y-4 md:translate-y-6 lg:translate-y-9 ml-4 overflow-visible">
+                <Image
+                    src="/getInvolved.png"
+                    alt="Get involved bubble speech"
+                    fill
+                    className="sm:block hidden object-cover object-center"
+                />
+            </div >
+            <div className="sm:hidden relative w-[65%] ml-1 aspect-[7.5/9.7] translate-y-4">
+                <Image
+                    src="/getInvolvedMobile.png"
+                    alt="Get involved bubble speech"
+                    fill
+                    className="sm:hidden block object-cover scale-150"
+                />
             </div>
-        </div>
+        </>
     );
 };
 
