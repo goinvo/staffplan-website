@@ -17,11 +17,3 @@ const RoundedContainer: React.FC<RoundedContainerProps> = ({ align = 'left', cla
 };
 
 export default RoundedContainer;
-
-
-{/* <div
-                className="w-full h-full bg-center bg-no-repeat bg-contain translate-y-12"
-                style={{ backgroundImage: "url('/peoplePreview.png')" }}
-            >
-                {/* Ваш контент здесь, если нужно */}
-// </div> */}

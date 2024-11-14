@@ -7,27 +7,29 @@ interface StaffplanDemoContainerProps {
 
 const StaffplanDemoContainer: React.FC<StaffplanDemoContainerProps> = ({ children }) => {
     return (
-        <section className="min-h-[50vh] sm:min-h-screen flex flex-col items-center justify-between bg-demo-gradient pb-6">
-            <h1 className="hidden sm:block text-huge font-bold mb-4">Try Staffplan!</h1>
+        <section className="flex flex-col items-center justify-between bg-demo-gradient pb-6 px-4">
+            <div className="relative hidden sm:flex justify-center w-[270px] h-[50px] mt-32">
+                <Image src="/tryStaffplan.png"
+                    fill
+                    className="object-contain" alt="Try Staffplan!" />
+            </div>
             {children}
-            <div className="relative w-full h-full px-4 aspect-[21/18] sm:aspect-[20/6.5] my-6 sm:my-0">
-                <div className="relative w-full h-full rounded-lg">
-                    <Image
-                        src="/tryStaffplanPreview.png"
-                        alt="Staffplan Demo"
-                        fill
-                        className="sm:block hidden rounded-lg object-cover"
-                    />
-                    <Image
-                        src="/tryStaffplanMobilePreview.png"
-                        alt="Staffplan Demo"
-                        fill
-                        className="sm:hidden block rounded-lg object-cover"
-                    />
-                </div>
+            <div className="relative w-full h-full px-8 aspect-[21/19.4] sm:aspect-[21/7] my-6 sm:mb-6 mt-10">
+                <Image
+                    src="/tryStaffplanPreview.png"
+                    alt="Staffplan Demo"
+                    fill
+                    className="sm:block hidden rounded-lg object-cover px-1"
+                />
+                <Image
+                    src="/tryStaffplanMobilePreview.png"
+                    alt="Staffplan Demo"
+                    fill
+                    className="sm:hidden block rounded-lg object-cover px-1"
+                />
             </div>
             <RoundedButton text="Sign me up!" variant="filled" size="large" href="https://staffplan.com/registrations/new" />
-        </section>
+        </section >
     );
 };
 

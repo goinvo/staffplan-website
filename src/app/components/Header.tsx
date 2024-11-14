@@ -14,9 +14,9 @@ const navbarLinks: NavbarLinksTypes[] = [
 ];
 
 const Header: React.FC = () => (
-    <header className="bg-white sticky top-0 z-50 text-tiffany px-4">
-        <div className="flex justify-between items-center py-1">
-            <div className="py-1">
+    <header className="sticky sm:fixed top-0 w-full sm:inset-x-0 sm:w-[calc(100%-40px)] sm:mx-auto bg-white z-50 text-tiffany px-4 rounded-lg sm:mt-4">
+        <div className="flex justify-between items-center">
+            <div className="py-4">
                 <Image src="/logo.svg" width={174} height={43} alt="staffplan logo" />
             </div>
             <nav className='mr-4'>
@@ -25,7 +25,7 @@ const Header: React.FC = () => (
                 </Link>
                 <ul className="hidden sm:flex text-26px space-x-8">
                     {navbarLinks.map((link, index) => (
-                        <li key={index}>
+                        <li key={index} className='py-2.5 font-semibold'>
                             <Link href={link.href}>
                                 {link.label}
                             </Link>
