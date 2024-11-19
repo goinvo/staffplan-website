@@ -14,18 +14,18 @@ const StaffplanDemoContainer: React.FC<StaffplanDemoContainerProps> = ({ childre
                     className="object-contain" alt="Try Staffplan!" />
             </div>
             {children}
-            <div className="relative w-full h-full px-8 aspect-[21/19.4] sm:aspect-[21/7] my-6 sm:mb-6 mt-10">
+            <div className="relative w-full h-full px-8 aspect-[21/19.4] max-w-[1238px] sm:aspect-[21/7] my-6 sm:mb-6 mt-10">
                 <Image
                     src="/tryStaffplanPreview.png"
                     alt="Staffplan Demo"
                     fill
-                    className="sm:block hidden rounded-lg object-cover px-1"
+                    className="sm:block hidden rounded-lg object-cover px-1 xl:px-0"
                 />
                 <Image
                     src="/tryStaffplanMobilePreview.png"
                     alt="Staffplan Demo"
                     fill
-                    className="sm:hidden block rounded-lg object-cover px-1"
+                    className="sm:hidden block rounded-lg object-cover"
                 />
             </div>
             <RoundedButton text="Sign me up!" variant="filled" size="large" href="https://staffplan.com/registrations/new" />
