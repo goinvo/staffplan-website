@@ -9,7 +9,7 @@ interface RightContentSectionProps {
 
 const LeftContentSection: React.FC<RightContentSectionProps> = ({ children, roundedContainerChildren, roundedContainerClassName }) => {
     return (
-        <div className="flex flex-col sm:flex-row sm:justify-between md:items-center lg:items-start w-full">
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center lg:items-start w-full">
             {children}
             <RoundedContainer align="right" className={`bg-purple ${roundedContainerClassName}`}>
                 {roundedContainerChildren}
