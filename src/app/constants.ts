@@ -32,6 +32,6 @@ export const INVOLVED_INFO: InfoSectionTypes[] = [
   {
     title: "Get involved!",
     description:
-      "Staffplan is open source and evolving. Feedback is important to making sure Staffplan can become a tool for everyone to use. Go to our GitHub",
+      "StaffPlan is open source and evolving. Feedback is important to making sure StaffPlan can become a tool for everyone to use. Go to our GitHub",
   },
 ];
