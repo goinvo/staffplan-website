@@ -28,7 +28,7 @@ const StaffplanDemoContainer: React.FC<StaffplanDemoContainerProps> = ({ childre
                     className="sm:hidden block rounded-lg object-cover"
                 />
             </div>
-            <RoundedButton text="Sign me up!" variant="filled" size="large" href="https://staffplan.com/registrations/new" />
+            <RoundedButton text="Sign me up!" variant="filled" size="large" href="https://app.staffplan.com/registrations/new" />
         </section >
     );
 };

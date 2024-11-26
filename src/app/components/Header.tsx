@@ -9,8 +9,8 @@ interface NavbarLinksTypes {
 }
 
 const navbarLinks: NavbarLinksTypes[] = [
-    { href: "https://staffplan.com/registrations/new", label: "Try" },
-    { href: "https://staffplan.com/sign_in", label: "Sign in" }
+    { href: "https://app.staffplan.com/registrations/new", label: "Try" },
+    { href: "https://app.staffplan.com/sign_in", label: "Sign in" }
 ];
 
 
@@ -23,7 +23,7 @@ const Header: React.FC = () => {
                     <Image src="/logo.svg" width={174} height={43} alt="staffplan logo" />
                 </div>
                 <nav className='mr-4'>
-                    <Link className="block sm:hidden" href={"https://staffplan.com/sign_in"}>
+                    <Link className="block sm:hidden" href={"https://app.staffplan.com/sign_in"}>
                         {"Sign In"}
                     </Link>
                     <ul className="hidden sm:flex space-x-8">
