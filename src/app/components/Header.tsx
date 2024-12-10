@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import FeedbackModal from './FeedbackModal';
 
 interface NavbarLinksTypes {
     href: string;
@@ -27,9 +26,6 @@ const Header: React.FC = () => {
                         {"Sign In"}
                     </Link>
                     <ul className="hidden sm:flex space-x-8">
-                        <li className='py-2.5 font-semibold'>
-                            <FeedbackModal />
-                        </li>
                         {navbarLinks.map((link, index) => (
                             <li key={index} className='py-2.5 font-semibold'>
                                 <Link href={link.href}>

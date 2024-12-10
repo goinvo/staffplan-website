@@ -12,7 +12,7 @@ const contentSections = [
     Component: RightContentSection,
     roundedContainerChildren: <MyStaffplanPreviewContainer />,
     infoData: STAFFPLAN_INFO,
-    showButton: true,
+    // showButton: true,
     buttonText: "Learn More",
     roundedContainerClassName: 'pr-auto sm:pr-16 pl-4',
     infoSectionStyles: 'sm:-translate-y-12'
@@ -25,17 +25,17 @@ const contentSections = [
     alignInfo: 'right',
     roundedContainerClassName: 'pl-auto sm:pl-16 pr-4'
   },
-  {
-    Component: RightContentSection,
-    roundedContainerChildren: <BubbleSpeechContainer />,
-    infoData: INVOLVED_INFO,
-    showButton: true,
-    buttonText: "Go to our GitHub",
-    href: "https://github.com/goinvo/staffplan-next-app",
-    roundedContainerClassName: 'my-8 px-5',
-    infoSectionStyles: 'mt-8'
+  // {
+  //   Component: RightContentSection,
+  //   roundedContainerChildren: <BubbleSpeechContainer />,
+  //   infoData: INVOLVED_INFO,
+  //   showButton: true,
+  //   buttonText: "Go to our GitHub",
+  //   href: "https://github.com/goinvo/staffplan-next-app",
+  //   roundedContainerClassName: 'my-8 px-5',
+  //   infoSectionStyles: 'mt-8'
 
-  },
+  // },
 ];
 
 
