@@ -14,7 +14,7 @@ export const ADVANTAGES_INFO: InfoSectionTypes[] = [
     description: "See who’s covered, what projects are active or coming in.",
   },
   {
-    title: "$3/month",
+    title: "$3/month per person",
     description:
       "For small teams who need to track time and plan their future.",
   },
