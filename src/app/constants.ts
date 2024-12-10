@@ -14,9 +14,9 @@ export const ADVANTAGES_INFO: InfoSectionTypes[] = [
     description: "See who’s covered, what projects are active or coming in.",
   },
   {
-    title: "First month free",
+    title: "$3/month",
     description:
-      "If you like it, keep it for just $3 dollars a person per month. For small teams who need to track time and plan their future.",
+      "For small teams who need to track time and plan their future.",
   },
 ];
 

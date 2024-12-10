@@ -17,7 +17,7 @@ const columnTwoLinks = [
 
 const columnThreeLinks = [
     { href: "https://app.staffplan.com/sign_in", label: "Sign In" },
-    { href: "https://app.staffplan.com/registrations/new", label: "Try for Free" }
+    { href: "https://app.staffplan.com/registrations/new", label: "Try StaffPlan" }
 ];
 
 const Footer: React.FC = () => (
