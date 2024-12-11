@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import FeedbackModal from './FeedbackModal';
+// import FeedbackModal from './FeedbackModal';
 
-const columnOneLinks = [
-    {
-        href: "https://github.com/goinvo/staffplan-next-app", label: "Open Source"
-    },
-];
+// const columnOneLinks = [
+//     {
+//         href: "https://github.com/goinvo/staffplan-next-app", label: "Open Source"
+//     },
+// ];
 
 const columnTwoLinks = [
     // { href: "#", label: "Help" },

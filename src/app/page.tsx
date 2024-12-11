@@ -1,11 +1,11 @@
 import InfoSection from "./components/InfoSection";
 import LeftContentSection from "./components/LeftContentSection";
 import RightContentSection from "./components/RightContentSection";
-import { ADVANTAGES_INFO, INVOLVED_INFO, STAFFPLAN_INFO } from "./constants";
+import { ADVANTAGES_INFO, STAFFPLAN_INFO } from "./constants";
 import StaffplanDemoContainer from "./components/StaffplanDemoContainer";
 import MyStaffplanPreviewContainer from "./components/MyStaffplanPreviewContainer";
 import PeoplePreviewContainer from "./components/PeoplePreviewContainer";
-import BubbleSpeechContainer from "./components/BubbleSpeechContainer";
+// import BubbleSpeechContainer from "./components/BubbleSpeechContainer";
 
 const contentSections = [
   {
@@ -23,7 +23,8 @@ const contentSections = [
     infoData: ADVANTAGES_INFO,
     showButton: false,
     alignInfo: 'right',
-    roundedContainerClassName: 'pl-auto sm:pl-16 pr-4'
+    roundedContainerClassName: 'pl-auto sm:pl-16 pr-4',
+    infoSectionStyles: 'sm:-translate-y-12'
   },
   // {
   //   Component: RightContentSection,
@@ -45,10 +46,10 @@ export default function Content() {
     <>
       <StaffplanDemoContainer />
       {contentSections.map((section, index) => {
-        const { Component, roundedContainerChildren, infoData, showButton, buttonText, href, alignInfo, infoSectionStyles } = section;
+        const { Component, roundedContainerChildren, infoData, showButton, buttonText, alignInfo, infoSectionStyles } = section;
         return (
           <Component key={index} roundedContainerChildren={roundedContainerChildren} roundedContainerClassName={section.roundedContainerClassName}>
-            <InfoSection infoData={infoData} showButton={showButton} buttonText={buttonText} href={href} align={alignInfo} className={infoSectionStyles} />
+            <InfoSection infoData={infoData} showButton={showButton} buttonText={buttonText} align={alignInfo} className={infoSectionStyles} />
           </Component>
         );
       })}
