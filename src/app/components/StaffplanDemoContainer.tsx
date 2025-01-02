@@ -9,7 +9,7 @@ const StaffplanDemoContainer: React.FC<StaffplanDemoContainerProps> = ({ childre
     return (
         <section className="flex flex-col items-center justify-between bg-demo-gradient pb-6 px-4">
             <div className="relative hidden sm:flex justify-center w-[270px] h-[50px] mt-32">
-                <Image src="/tryStaffplan.png"
+                <Image src="/design-your-work-future.png"
                     fill
                     className="object-contain" alt="Design Your Work Future" />
             </div>
