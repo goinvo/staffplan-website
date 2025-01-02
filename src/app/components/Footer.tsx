@@ -29,7 +29,7 @@ const Footer: React.FC = () => (
                     <Link href="https://goinvo.com/">
                         <Image src="/goinvoLogo.svg" width={98} height={52} alt="GoInvo logo" />
                     </Link>
-                    <p className="ml-2 self-end text-contrastGrey">&copy; 2024</p>
+                    <p className="ml-2 self-end text-contrastGrey">&copy; 2025</p>
                 </div>
             </div>
             <div className="flex flex-col sm:flex-row sm:justify-center justify-normal sm:space-x-24 space-y-8 sm:space-y-2 text-white mr-auto">
@@ -54,7 +54,7 @@ const Footer: React.FC = () => (
                 <Link href="https://goinvo.com/">
                     <Image src="/goinvoLogo.svg" width={98} height={52} alt="GoInvo logo" />
                 </Link>
-                <p className="ml-2 self-end text-contrastGrey">&copy; 2024</p>
+                <p className="ml-2 self-end text-contrastGrey">&copy; 2025</p>
             </div>
         </div>
     </footer >
