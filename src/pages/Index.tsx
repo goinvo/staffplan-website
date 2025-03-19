@@ -13,10 +13,10 @@ const Index: React.FC = () => {
       <StarsBackground />
       <Navbar />
       <Hero />
-      <section className="py-16">
+      <section className="py-4">
         <EarthContainer />
       </section>
-      <section className="py-16">
+      <section className="py-4">
         <MarsContainer />
       </section>
       <section className="py-16">

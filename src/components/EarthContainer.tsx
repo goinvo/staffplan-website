@@ -14,7 +14,7 @@ const EarthContainer: React.FC = () => {
       
       {/* Speech bubble */}
       <div 
-        className="relative w-[60%] bg-white rounded-xl p-6 text-black animate-float-up z-10"
+        className="relative w-[45%] bg-white rounded-xl p-6 text-black animate-float-up z-10"
         style={{ 
           opacity: 0.9,
           animationDelay: '0.8s',

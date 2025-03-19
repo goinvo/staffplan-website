@@ -10,7 +10,7 @@ interface SpeechBubbleProps {
 const SpeechBubble: React.FC<SpeechBubbleProps> = ({ text, position, style, name }) => {
   return (
     <div>
-      <div className={`absolute ${position} bg-white/90 rounded-2xl p-4 max-w-[250px] shadow-lg`} style={style}>
+      <div className={`absolute ${position} bg-white/100 rounded-2xl p-4 max-w-[250px] shadow-lg`} style={style}>
         <div className="relative">
           <p className="text-gray-800">{text}</p>
           <div className="absolute -bottom-6 left-4 w-4 h-4 bg-white/100 transform rotate-45"></div>
