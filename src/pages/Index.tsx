@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import EarthContainer from '../components/EarthContainer';
 import MarsContainer from '../components/MarsContainer';
+import ScreenshotsContainer from '../components/ScreenshotsContainer';
 import StarsBackground from '../components/StarsBackground';
 import Footer from '../components/Footer';
 
@@ -17,6 +18,9 @@ const Index: React.FC = () => {
       </section>
       <section className="py-16">
         <MarsContainer />
+      </section>
+      <section className="py-16">
+        <ScreenshotsContainer />
       </section>
       <Footer />
     </div>

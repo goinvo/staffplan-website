@@ -13,7 +13,7 @@ const SpeechBubble: React.FC<SpeechBubbleProps> = ({ text, position, style, name
       <div className={`absolute ${position} bg-white/90 rounded-2xl p-4 max-w-[250px] shadow-lg`} style={style}>
         <div className="relative">
           <p className="text-gray-800">{text}</p>
-          <div className="absolute -bottom-2 left-4 w-4 h-4 bg-white/90 transform rotate-45"></div>
+          <div className="absolute -bottom-6 left-4 w-4 h-4 bg-white/100 transform rotate-45"></div>
         </div>
       </div>
       {name && <div className="text-gray-700 font-bold">{name}</div>}
@@ -35,24 +35,24 @@ const MarsContainer: React.FC = () => {
         <SpeechBubble 
           text="I can't do it. I'm already booked."
           position="top-5 left-5"
-          style={{ fontStyle: 'italic', fontSize: '125%' }}
+          style={{ fontStyle: 'italic', fontSize: '145%' }}
           name="Mars Astronaut 1"
         />
         <SpeechBubble 
           text="What are we supposed to do then?"
           position="top-40 right-5"
-          style={{ fontStyle: 'italic', fontSize: '125%' }}
+          style={{ fontStyle: 'italic', fontSize: '145%' }}
           name="Mars Astronaut 2"
         />
         <SpeechBubble 
           text="Just shit in the sand."
           position="top-60 left-5"
-          style={{ fontStyle: 'italic', fontSize: '125%' }}
+          style={{ fontStyle: 'italic', fontSize: '145%' }}
         />
         <SpeechBubble 
           text="Ohhh, my tummy. This isn't going to be pretty...."
           position="top-80 right-5"
-          style={{ fontStyle: 'italic', fontSize: '125%' }}
+          style={{ fontStyle: 'italic', fontSize: '145%' }}
         />
         {/* Content overlay will go here */}
         <div className="relative z-10 container mx-auto px-4">
