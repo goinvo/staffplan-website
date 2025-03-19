@@ -16,7 +16,8 @@ const StarsBackground: React.FC = () => {
   useEffect(() => {
     const generateStars = () => {
       const newStars: Star[] = [];
-      const starCount = Math.floor(window.innerWidth * window.innerHeight / 2000);
+      // Use document height instead of window height for full coverage
+      const starCount = Math.floor(window.innerWidth * Math.max(document.documentElement.scrollHeight, document.body.scrollHeight) / 2000);
       
       for (let i = 0; i < starCount; i++) {
         // Determine if this star will have the twinkling effect (about 30% of stars)
@@ -27,8 +28,8 @@ const StarsBackground: React.FC = () => {
         
         newStars.push({
           id: i,
-          top: `${Math.random() * 100}vh`,
-          left: `${Math.random() * 100}vw`,
+          top: `${Math.random() * 100}%`,
+          left: `${Math.random() * 100}%`,
           size: `${starSize}px`,
           delay: `${Math.random() * 5}s`,
           duration: hasTwinkle ? ['twinkle', 'twinkle-slow', 'twinkle-slower'][Math.floor(Math.random() * 3)] : '',
@@ -52,7 +53,7 @@ const StarsBackground: React.FC = () => {
   }, []);
 
   return (
-    <div className="fixed inset-0 -z-10 overflow-hidden">
+    <div className="absolute inset-0 -z-10 overflow-hidden">
       {stars.map((star) => (
         <div
           key={star.id}

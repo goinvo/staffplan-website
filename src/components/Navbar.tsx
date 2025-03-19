@@ -6,7 +6,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="w-full py-6 px-4 md:px-8 lg:px-12 animate-float-up" style={{ animationDelay: '0.2s' }}>
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center max-w-5xl">
         <div className="text-xl md:text-2xl font-semibold tracking-tight">
           <a href="/" className="text-teal hover:opacity-90 transition-opacity">
             StaffPlan

@@ -2,7 +2,7 @@ import React from 'react';
 
 const EarthContainer: React.FC = () => {
   return (
-    <div className="relative w-full min-h-[600px] flex items-center justify-center">
+    <div className="relative w-full min-h-[500px] flex items-center justify-center">
       {/* Earth background image */}
       <div 
         className="absolute inset-0 bg-center bg-no-repeat bg-contain"
