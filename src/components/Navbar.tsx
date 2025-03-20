@@ -5,8 +5,8 @@ const Navbar: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <nav className="w-full py-6 px-4 md:px-8 lg:px-12 animate-float-up" style={{ animationDelay: '0.2s' }}>
-      <div className="container mx-auto flex justify-between items-center max-w-5xl">
+    <nav className="py-6 animate-float-up" style={{ animationDelay: '0.2s' }}>
+      <div className="container mx-auto flex px-4 justify-between items-center max-w-5xl">
         <div className="text-xl md:text-2xl font-semibold tracking-tight">
           <a href="/" className="text-teal hover:opacity-90 transition-opacity">
             StaffPlan

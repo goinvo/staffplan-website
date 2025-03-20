@@ -17,7 +17,7 @@ const SpeechBubble: React.FC<SpeechBubbleProps> = ({ text, position, style, name
           {/* <div className={`absolute -bottom-6 left-4 w-4 h-4 ${color ? color : 'bg-white/100'} transform rotate-45`}></div> */}
         </div>
       </div>
-      {name && <div className="text-gray-700 font-bold">{name}</div>}
+      {name && <div className="text-gray-700 font-bold absolute bottom-[-30px] left-4">{name}</div>}
     </div>
   );
 };
@@ -50,12 +50,14 @@ const MarsContainer: React.FC = () => {
           text="Just shit in the sand."
           position="top-60 left-5"
           style={{ fontStyle: 'italic', fontSize: '145%' }}
+          name="Mars Astronaut 1"
         />
         <SpeechBubble 
           text="Ohhh, my tummy. This isn't going to be pretty...."
           position="top-80 right-5"
           style={{ fontStyle: 'italic', fontSize: '145%', color: 'white' }}
           color="bg-[rgb(41,181,176)]"
+          name="Mars Astronaut 2"
         />
         {/* Content overlay will go here */}
       </div>

@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import CallToActionButton from './CallToActionButton';
 
 interface ScreenshotsContainerProps {
-  enableHoverAnimation?: boolean;
+  enableHoverEffect?: boolean;
 }
 
-const ScreenshotsContainer: React.FC<ScreenshotsContainerProps> = ({ enableHoverAnimation = false }) => {
+const ScreenshotsContainer: React.FC<ScreenshotsContainerProps> = ({ enableHoverEffect = false }) => {
   const [tilts, setTilts] = useState([
     { x: 0, y: 0 },
     { x: 0, y: 0 },
@@ -13,7 +13,7 @@ const ScreenshotsContainer: React.FC<ScreenshotsContainerProps> = ({ enableHover
   ]);
 
   const handleMouseMove = (index: number) => (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!enableHoverAnimation) return;
+    if (!enableHoverEffect) return;
     const rect = e.currentTarget.getBoundingClientRect();
     const x = (e.clientX - rect.left) / rect.width - 0.5;
     const y = (e.clientY - rect.top) / rect.height - 0.5;
@@ -23,7 +23,7 @@ const ScreenshotsContainer: React.FC<ScreenshotsContainerProps> = ({ enableHover
   };
 
   const handleMouseLeave = (index: number) => () => {
-    if (!enableHoverAnimation) return;
+    if (!enableHoverEffect) return;
     setTilts(prev => prev.map((tilt, i) => 
       i === index ? { x: 0, y: 0 } : tilt
     ));
@@ -39,9 +39,9 @@ const ScreenshotsContainer: React.FC<ScreenshotsContainerProps> = ({ enableHover
           className="w-full rounded-lg overflow-hidden shadow-2xl mb-16 transition-transform duration-200"
           onMouseMove={handleMouseMove(0)}
           onMouseLeave={handleMouseLeave(0)}
-          style={{
-            transform: enableHoverAnimation ? `perspective(1000px) rotateX(${tilts[0].y}deg) rotateY(${tilts[0].x}deg)` : 'none'
-          }}
+          style={enableHoverEffect ? {
+            transform: `perspective(1000px) rotateX(${tilts[0].y}deg) rotateY(${tilts[0].x}deg)`
+          } : undefined}
         >
           <img 
             src="/staffplan_my_staffplan.png" 
@@ -56,9 +56,9 @@ const ScreenshotsContainer: React.FC<ScreenshotsContainerProps> = ({ enableHover
           className="w-full rounded-lg overflow-hidden shadow-2xl mb-16 transition-transform duration-200"
           onMouseMove={handleMouseMove(1)}
           onMouseLeave={handleMouseLeave(1)}
-          style={{
-            transform: enableHoverAnimation ? `perspective(1000px) rotateX(${tilts[1].y}deg) rotateY(${tilts[1].x}deg)` : 'none'
-          }}
+          style={enableHoverEffect ? {
+            transform: `perspective(1000px) rotateX(${tilts[1].y}deg) rotateY(${tilts[1].x}deg)`
+          } : undefined}
         >
           <img 
             src="/staffplan_people.png" 
@@ -73,9 +73,9 @@ const ScreenshotsContainer: React.FC<ScreenshotsContainerProps> = ({ enableHover
           className="w-full rounded-lg overflow-hidden shadow-2xl mb-16 transition-transform duration-200"
           onMouseMove={handleMouseMove(2)}
           onMouseLeave={handleMouseLeave(2)}
-          style={{
-            transform: enableHoverAnimation ? `perspective(1000px) rotateX(${tilts[2].y}deg) rotateY(${tilts[2].x}deg)` : 'none'
-          }}
+          style={enableHoverEffect ? {
+            transform: `perspective(1000px) rotateX(${tilts[2].y}deg) rotateY(${tilts[2].x}deg)`
+          } : undefined}
         >
           <img 
             src="/staffplan_projects.png" 
