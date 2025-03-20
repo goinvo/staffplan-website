@@ -16,7 +16,7 @@ const Index: React.FC = () => {
       <section className="py-4">
         <EarthContainer />
       </section>
-      <section className="py-4">
+      <section className="pb-4">
         <MarsContainer />
       </section>
       <section className="py-16">

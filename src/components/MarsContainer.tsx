@@ -5,15 +5,16 @@ interface SpeechBubbleProps {
   position: string;
   style?: React.CSSProperties;
   name?: string;
+  color?: string;
 }
 
-const SpeechBubble: React.FC<SpeechBubbleProps> = ({ text, position, style, name }) => {
+const SpeechBubble: React.FC<SpeechBubbleProps> = ({ text, position, style, name, color }) => {
   return (
     <div>
-      <div className={`absolute ${position} bg-white/100 rounded-2xl p-4 max-w-[250px] shadow-lg`} style={style}>
+      <div className={`absolute ${position} ${color ? color : 'bg-white/100'} rounded-2xl p-4 max-w-[250px] shadow-lg`} style={style}>
         <div className="relative">
-          <p className="text-gray-800">{text}</p>
-          <div className="absolute -bottom-6 left-4 w-4 h-4 bg-white/100 transform rotate-45"></div>
+          <p className={`${style?.color ? '' : 'text-gray-800'}`} style={{color: style?.color}}>{text}</p>
+          {/* <div className={`absolute -bottom-6 left-4 w-4 h-4 ${color ? color : 'bg-white/100'} transform rotate-45`}></div> */}
         </div>
       </div>
       {name && <div className="text-gray-700 font-bold">{name}</div>}
@@ -41,8 +42,9 @@ const MarsContainer: React.FC = () => {
         <SpeechBubble 
           text="What are we supposed to do then?"
           position="top-40 right-5"
-          style={{ fontStyle: 'italic', fontSize: '145%' }}
+          style={{ fontStyle: 'italic', fontSize: '145%', color: 'white' }}
           name="Mars Astronaut 2"
+          color="bg-[rgb(41,181,176)]"
         />
         <SpeechBubble 
           text="Just shit in the sand."
@@ -52,12 +54,10 @@ const MarsContainer: React.FC = () => {
         <SpeechBubble 
           text="Ohhh, my tummy. This isn't going to be pretty...."
           position="top-80 right-5"
-          style={{ fontStyle: 'italic', fontSize: '145%' }}
+          style={{ fontStyle: 'italic', fontSize: '145%', color: 'white' }}
+          color="bg-[rgb(41,181,176)]"
         />
         {/* Content overlay will go here */}
-        <div className="relative z-10 container mx-auto px-4">
-          {/* Mars section content will go here */}
-        </div>
       </div>
     </div>
   );
