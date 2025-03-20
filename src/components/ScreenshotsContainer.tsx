@@ -31,7 +31,7 @@ const ScreenshotsContainer: React.FC<ScreenshotsContainerProps> = ({ enableHover
 
   return (
     <div className="container mx-auto px-4 max-w-5xl">
-      <div className="flex flex-col items-start justify-center py-16">
+      <div className="flex flex-col items-start justify-center py-4">
         <h2 className="text-4xl md:text-5xl font-italic text-teal mb-4">
           Plan your work future.
         </h2>

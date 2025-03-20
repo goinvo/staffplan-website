@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import EarthContainer from '../components/EarthContainer';
@@ -11,6 +12,21 @@ import Footer from '../components/Footer';
 const Index: React.FC = () => {
   return (
     <div className="min-h-screen relative">
+      <Helmet>
+        <title>StaffPlan - Time tracking for projects</title>
+        <meta name="description" content="StaffPlan helps organizations plan and track time on projects." />
+        <meta name="keywords" content="time tracking, hour tracking, project time tracking, project scheduling, resource planning" />
+        <meta property="og:title" content="StaffPlan - Time tracking for projects" />
+        <meta property="og:description" content="StaffPlan helps organizations plan and track time on projects." />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="StaffPlan - Time tracking for projects" />
+        <meta name="twitter:description" content="StaffPlan helps organizations plan and track time on projects." />
+        <meta name="twitter:image" content="/og-image.jpg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href="https://staffplan.com" />
+      </Helmet>
       <StarsBackground />
       <Navbar />
       <Hero />
@@ -23,7 +39,7 @@ const Index: React.FC = () => {
       <section className="py-4">
         <SpaceCowboy />
       </section>
-      <section className="py-16">
+      <section className="py-4">
         <ScreenshotsContainer />
       </section>
       <Footer />
