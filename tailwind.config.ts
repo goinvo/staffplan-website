@@ -29,6 +29,7 @@ export default {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         teal: '#29B5B0',
+        brown: '#B47549',
         space: {
           DEFAULT: '#050505',
           dark: '#000000',
