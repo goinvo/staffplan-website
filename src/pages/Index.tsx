@@ -8,6 +8,7 @@ import SpaceCowboy from '../components/SpaceCowboy';
 import ScreenshotsContainer from '../components/ScreenshotsContainer';
 import StarsBackground from '../components/StarsBackground';
 import Footer from '../components/Footer';
+import { FlyingToilet } from '../components/FlyingToilet';
 
 const Index: React.FC = () => {
   return (
@@ -28,6 +29,7 @@ const Index: React.FC = () => {
         <link rel="canonical" href="https://staffplan.com" />
       </Helmet>
       <StarsBackground />
+      <FlyingToilet className="top-32" />
       <Navbar />
       <Hero />
       <section className="py-4">
