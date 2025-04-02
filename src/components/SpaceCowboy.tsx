@@ -12,6 +12,12 @@ const SpaceCowboy: React.FC = () => {
             alt="Space Cowboy" 
             className="w-1/2 sm:w-full h-auto rounded-lg shadow-2xl mx-auto md:mx-0"
           />
+          <div className="mt-4 w-full">
+            <audio controls className="w-full">
+              <source src="/did-you-get-the-job.mp3" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
         </div>
         
         {/* Right column - Text and Button */}
